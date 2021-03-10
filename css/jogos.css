@@ -1,0 +1,59 @@
+*{
+    color: white;
+}
+
+.corpo{
+    margin: 3em 0;
+}
+
+ul{
+    margin: 2em auto;
+    width: fit-content;
+    
+}
+
+li{
+    padding: 0.5em;
+    font-style: italic;
+    list-style-position: inside;
+    width: 11em;
+    background-color: #c53c19;
+    margin: 1em;
+}
+
+a{
+    text-decoration: none;
+    color: #c53c19;
+}
+
+a:hover{
+    transition: .2s;
+    color: #f06441;
+}
+
+table{
+    margin: 0 auto;
+    border-style: solid;
+}
+
+td{
+    padding: 1em;
+    background-color: rgb(252, 118, 40);
+}
+
+th{
+    background-color: #c53c19;
+    padding: 0;
+    border-style: none;
+    padding: 1em;
+}
+
+h2{
+margin: 1em 0;
+font-style: italic;
+}
+
+h1{
+    font-size: 3em;
+    margin-bottom: 1em;
+}

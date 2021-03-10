@@ -1,0 +1,108 @@
+.fadein {
+    transition: 2s;
+    opacity: 0;
+    height: 0;
+}
+
+.fadein-end {
+    opacity: 1;
+    height: 100%;
+}
+
+.dropdown{
+    animation: dropdown 1s linear
+}
+@keyframes dropdown{
+    from{
+        transform: translateY(-20em);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+
+#nome{
+    padding: 10px;
+    font-size: 2em;
+}
+
+#foto-eu{
+    width: 15em;
+    border-radius: 200px;
+    margin-bottom: -5em;
+    border: solid 10px #c53c19;
+}
+
+.paragrafo{
+    margin: 10em 45vh 0 45vh;
+    color: white;
+    font-size: 1em;
+    animation: dropdown 1s linear
+}
+.paragrafo h2{
+    margin: 1em 0;
+}
+.paragrafo a{
+    text-decoration: none;
+    color: #c53c19;
+}
+.paragrafo a:hover{
+    transition: .2s;
+    color: #f06441;
+}
+
+.raposa-link{
+    width: 2em;
+    opacity: 0%;
+    visibility: hidden;
+    margin-left: -2em;
+}
+
+.raposa-link-start{
+    transition: .5s;
+    visibility: visible;
+    opacity: 100%;
+    margin-left: 0;
+    z-index: 5;
+}
+
+.raposa-link-end{
+    visibility: hidden;
+    transition: .3s;
+    opacity:0%;
+    margin-left: -2em;
+    z-index:-1;
+}
+
+
+.linha{
+    border-style: solid; 
+    border-width: 1px;
+    margin: .5em auto;
+    opacity: 0%;
+    width: 0;
+}
+
+.linha-start{
+    transition: 1s;
+    width: 14em;
+    opacity: 100%;
+}
+
+.linha-end{
+    transition: 1s;
+    width: 0;
+    opacity: 0%;
+}
+
+
+@media screen and (max-width: 1000px){
+    .paragrafo{
+        margin: 10em 5vh 0 5vh;
+    }
+    #foto-eu{
+        width: 30em;
+        border-radius: 400px;
+    }
+}
